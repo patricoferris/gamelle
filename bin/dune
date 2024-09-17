@@ -5,6 +5,8 @@
  (libraries
   gamelle_template
   unix
+  threads
+  gamelle
   str
   cmdliner
   dynlink
