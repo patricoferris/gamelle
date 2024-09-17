@@ -6,7 +6,6 @@
   gamelle_template
   unix
   threads
-  gamelle
   str
   cmdliner
   dynlink
@@ -20,5 +19,5 @@
   (select
    hotreload.ml
    from
-   (inotify -> hotreload.available.ml)
+   (inotify gamelle.sdl -> hotreload.available.ml)
    (!inotify -> hotreload.unavailable.ml))))
